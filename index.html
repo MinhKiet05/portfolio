@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Huỳnh Minh Kiệt - Portfolio</title>
+    <!-- Fonts: Be Vietnam Pro (giao diện chính, hỗ trợ tiếng Việt) + JetBrains Mono (điểm nhấn kiểu code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Lớp hiệu ứng nền: aurora blobs + lưới chấm + noise, cố định phía sau toàn trang -->
+    <div class="bg-fx" aria-hidden="true">
+        <span class="blob blob-violet"></span>
+        <span class="blob blob-cyan"></span>
+        <span class="blob blob-pink"></span>
+        <div class="bg-grid"></div>
+        <div class="bg-noise"></div>
+    </div>
+
+    <header id="site-header">
+        <div class="container header-container">
+            <a href="#top" class="brand">
+                <span class="brand-mark">&lt;TK/&gt;</span>
+                <span class="brand-name">Minh&nbsp;Kiệt</span>
+            </a>
+
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="#about-me"><span class="nav-index">01</span>Giới thiệu</a></li>
+                    <li><a href="#skills"><span class="nav-index">02</span>Kỹ năng</a></li>
+                    <li><a href="#projects"><span class="nav-index">03</span>Dự án</a></li>
+                    <li><a href="#contact"><span class="nav-index">04</span>Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <button id="nav-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section id="about-me" class="about-me">
+            <div class="container about-container">
+
+                <div class="left-column reveal">
+                    <div class="window profile-window">
+                        <div class="window-bar">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span class="window-filename">profile.webp</span>
+                        </div>
+                        <div class="window-body profile-body">
+                            <img src="./img/profile.webp" alt="Trần Huỳnh Minh Kiệt" class="profile-img">
+                        </div>
+                    </div>
+                    <span class="floating-chip chip-a">💻 Web Dev</span>
+                    <span class="floating-chip chip-b">🚀 Vibe Coding</span>
+                </div>
+
+                <div class="right-column reveal">
+                    <p class="eyebrow">// xin chào, mình là</p>
+                    <h1 class="hero-name">Trần Huỳnh Minh Kiệt</h1>
+                    <h4 class="typing-container"><span class="prompt-symbol">$</span> <span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
+
+                    <p>Xin chào! Mình là Minh Kiệt, một sinh viên đam mê công nghệ và phát triển phần mềm. Mình thích học hỏi những công nghệ mới và biến chúng thành sản phẩm có giao diện hiện đại, mượt mà.</p>
+                    <p>Hãy cùng mình khám phá thế giới lập trình và chia sẻ kiến thức!</p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="window.location.href='#contact'">Liên hệ với tôi</button>
+                        <a href="#projects" class="btn btn-ghost">Xem dự án ↓</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label">Dự án</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">9+</span>
+                            <span class="stat-label">Công nghệ</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Tự học</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <p class="section-eyebrow reveal">02 · Bộ công cụ</p>
+                <h2 class="reveal">Kỹ năng &amp; công nghệ</h2>
+                <p class="section-lead reveal">Những công nghệ mình dùng để biến ý tưởng thành sản phẩm thật, được rút ra trực tiếp từ các dự án bên dưới.</p>
+
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3><span class="dot-marker dot-violet"></span>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="tag">ReactJS</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">GSAP</span>
+                            <span class="tag">Vite</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><span class="dot-marker dot-cyan"></span>Backend &amp; CSDL</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><span class="dot-marker dot-pink"></span>Công cụ khác</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Clerk</span>
+                            <span class="tag">Git &amp; GitHub</span>
+                            <span class="tag">C/C++</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <p class="section-eyebrow reveal">03 · Sản phẩm</p>
+                <h2 class="reveal">Dự án của tôi</h2>
+                <p class="section-lead reveal">Một vài dự án cá nhân mình đã xây dựng để luyện tập và thử nghiệm công nghệ mới.</p>
+
+                <div class="project-list">
+
+                    <a class="project-item reveal" href="https://github.com/MinhKiet05/web-ban-quan-ao" target="_blank" rel="noopener">
+                        <div class="window">
+                            <div class="window-bar">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="window-filename">web-ban-quan-ao</span>
+                            </div>
+                            <div class="project-img">
+                                <img src="./img/prj1.webp" alt="Fashion Store KHK">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fashion Store - KHK</h3>
+                            <p>Nền tảng thương mại điện tử hiện đại được xây dựng với Node.js/Express cho backend API và React cho frontend.</p>
+                            <div class="project-tags">
+                                <span class="tag">ReactJS</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <span class="project-link">Xem trên GitHub <span class="arrow">→</span></span>
+                        </div>
+                    </a>
+
+                    <a class="project-item reveal" href="https://github.com/MinhKiet05/web-du-lich" target="_blank" rel="noopener">
+                        <div class="window">
+                            <div class="window-bar">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="window-filename">web-du-lich</span>
+                            </div>
+                            <div class="project-img">
+                                <img src="./img/prj2.webp" alt="Travlia">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Travlia - Web Du Lịch</h3>
+                            <p>Ứng dụng web cho việc tìm kiếm, xem chi tiết và đặt các tour du lịch trong nước, xây dựng với React, TypeScript và Firebase.</p>
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">GSAP</span>
+                            </div>
+                            <span class="project-link">Xem trên GitHub <span class="arrow">→</span></span>
+                        </div>
+                    </a>
+
+                    <a class="project-item reveal" href="https://github.com/MinhKiet05/project-1-k21" target="_blank" rel="noopener">
+                        <div class="window">
+                            <div class="window-bar">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="window-filename">project-1-k21</span>
+                            </div>
+                            <div class="project-img">
+                                <img src="./img/prj3.webp" alt="TradeHub">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>TradeHub - Nền tảng trung gian mua bán</h3>
+                            <p>Nền tảng thương mại điện tử được xây dựng với React + Vite, hỗ trợ đa ngôn ngữ và có tính năng chat thời gian thực.</p>
+                            <div class="project-tags">
+                                <span class="tag">ReactJS</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Clerk</span>
+                            </div>
+                            <span class="project-link">Xem trên GitHub <span class="arrow">→</span></span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="view-more reveal">
+                    <a class="btn btn-ghost" href="https://github.com/MinhKiet05" target="_blank" rel="noopener">Xem thêm trên GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <p class="section-eyebrow reveal">04 · Kết nối</p>
+                <h2 class="reveal">Liên hệ</h2>
+
+                <div class="window terminal-window reveal">
+                    <div class="window-bar">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="window-filename">contact.sh</span>
+                    </div>
+                    <div class="window-body terminal-body">
+                        <p><span class="prompt-symbol">$</span> whoami</p>
+                        <p class="terminal-output">Trần Huỳnh Minh Kiệt</p>
+                        <p><span class="prompt-symbol">$</span> cat contact.info</p>
+                        <p class="terminal-output">GitHub &nbsp;→ <a href="https://github.com/MinhKiet05" target="_blank" rel="noopener">github.com/MinhKiet05</a></p>
+                        <p class="terminal-output">Email &nbsp;&nbsp;→ <a href="mailto:thminhkiet05@gmail.com">thminhkiet05@gmail.com</a></p>
+                        <p><span class="prompt-symbol">$</span> <span class="terminal-cursor">&nbsp;</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <span>© 2026 Trần Huỳnh Minh Kiệt</span>
+            <span class="footer-dot">·</span>
+            <span class="footer-dot">Hãy kết nối với tôi!</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
